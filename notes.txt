@@ -1,0 +1,19 @@
+Functional Programming in Scala Notes - Paul C & Runar B
+
+1. referential transparency and the substitution model
+
+2. Side effects 
+	- modifying a variable
+	- modifying a data structure in place
+	- setting a field on an object
+	- throwing an exception or halting with an error
+	- printing to the console or reading user input
+	- reading from or writing to a file
+	- drawing on screen
+
+3. Pure functions are easier to reason about. A function has no observable effect on the execution of the program other than 
+to compute a result given its inputs; we say that it has no side effects
+
+4. An expression e is referentially transparent if, for all programs p, all occurences of e in p can be replaced by the result 
+of evaluating e without effecting the meaning of p. A fucntion f is pure if the expression f(x) is referentially transparent 
+for all referentially transparent x.  	 
